@@ -1,0 +1,725 @@
+body{
+}
+h1,h2,h3,h4,.lead{
+    font-family: 'Slabo 27px', serif;
+}
+a:focus{outline: none;}
+/* home page style------------------------------------------*/
+.home-page{
+    position: relative;
+}
+.home-page .row{ margin-right: 0;}
+.home-page .cover-photo{
+    position: absolute;
+    top: 65%;
+    left: 46%;
+    transform:translate(-50%,-50%);
+}
+.home-page .pink{
+    height: 653px;
+    background: #fac8e4;
+    padding-left: 0;
+    padding-right: 0;
+}
+.home-page .blue{
+    height: 653px;
+    background: #a6c9f4;
+    padding-left: 0;
+    padding-right: 0;
+}
+@media(max-width:991px){
+    .home-page .pink{ height: auto;}
+    .home-page .blue{ height: auto;}
+}
+.home-page .logo{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.home-page h4{
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #78797a;
+}
+.girl-head, .boy-head{
+    background: url(../images/click-bg.jpg);
+    margin-top: 60px;
+    height: auto;
+}
+.girl-head{
+    float: left;
+    padding: 10px 15px 20px 25px;
+    border-top: 5px solid #f859ae;
+    border-bottom: 5px solid #f859ae;
+    border-right: 5px solid #f859ae;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.boy-head{
+    float: right;
+    padding: 10px 10px 20px 15px;
+    border-top: 5px solid #2782f5;
+    border-bottom: 5px solid #2782f5;
+    border-left: 5px solid #2782f5;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+@media(max-width:991px){
+    .girl-head, .boy-head{
+        float: none;
+        margin: 60px auto;
+        padding: 10px;
+        border-radius: 30px;
+    }
+/*    .girl-head{border: 5px solid #f859ae;}
+    .boy-head{border: 5px solid #2782f5;}*/
+}
+
+.girl-head p, .boy-head p{
+    width: 345px;
+    text-align: justify;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+@media(min-width:992px) and (max-width:1199px){
+    .girl-head p, .boy-head p{
+        font-size: 18px;
+        width: 335px;
+        padding: 5px;
+        text-align: center;
+    }
+}
+@media(max-width:991px){
+    .girl-head p, .boy-head p{
+        font-size: 16px;
+        width: auto;
+        padding: 5px;
+        text-align: center
+    }
+}
+.girl-head p{
+    border-bottom: 5px  dotted #f859ae;
+}
+.boy-head p{
+    border-bottom: 5px  dotted #2782f5;
+}
+.girl-head a, .boy-head a{
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.girl-head a{
+    background: #fac8e4;
+    float: left;
+}
+@media(max-width:767px){
+    .girl-head .go-to{ margin-left: 5px;}
+}
+.boy-head a{
+    background: #a6c9f4;
+    float: right;
+}
+@media(min-width:601px) and (max-width:767px){
+    .girl-head a, .boy-head a{ font-size: 12px;}
+}
+@media(max-width:600px){
+    .girl-head a{
+        border: 2px solid #f859ae;
+        padding: 5px;
+        float: none;
+    }
+    .boy-head a{
+        border: 2px solid #2782f5;
+        padding: 5px;
+        float: none;
+    }
+    .girl-head .social-l{ float: left;}
+    .boy-head .social-l{ float: right;}
+    .go-to{
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+@media(max-width:767px){
+    .girl-head .social-l{ margin-left: 5px;}
+}
+.home-page h2{
+    font-size: 86px;
+    font-family:  cursive;
+    color: gray;
+    text-shadow: 5px 5px 5px #fff;
+}
+.pink h2{
+    float: right;
+    margin-right: 190px;
+}
+.blue h2{
+    float: left;
+    margin-left: 190px;
+}
+@media(max-width:1199px){
+    .home-page h2{ font-size: 70px;}
+}
+@media(max-width:991px){
+    .home-page h2{
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+}
+@media(max-width:767px){
+    .home-page h2{ font-size: 60px;}
+}
+@media(max-width:600px){
+    .home-page h2{
+        font-size: 32px;
+        text-shadow: 3px 4px 0px #fff;
+    }
+}
+.float{
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,.4);
+}
+.float1{
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    left: 40px;
+    animation: move 2.5s linear infinite;
+    -webkit-animation: move 2.5s linear infinite;
+}
+.float2{
+    width: 200px;
+    height: 200px;
+    top: 40px;
+    left: 700px;
+    animation: move 4s linear infinite;
+    -webkit-animation: move 4s linear infinite;
+}
+.float3{
+    width: 150px;
+    height: 150px;
+    top: 300px;
+    left: 300px;
+    animation: move 4s linear infinite;
+    -webkit-animation: move 3s linear infinite;
+}
+.float4{
+    width: 80px;
+    height: 80px;
+    top: 200px;
+    right: 20px;
+    animation: move 4s linear infinite;
+    -webkit-animation: move 3s linear infinite;
+}
+@-webkit-keyframes move{
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(25px);}
+    100% {transform: translateY(0px);}
+}
+@keyframes move{
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(25px);}
+    100% {transform: translateY(0px);}
+}
+
+/*girls corner and boys corner style-------------------------------------------*/
+.logo-img img{
+    margin: 0 auto;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+    border-top: 5px  dotted #fff;
+    border-bottom: 5px  dotted #fff;
+}
+.girls-nav{
+    background: #f859ae;
+}
+.boys-nav{
+    background: #2782f5;
+}
+
+nav ul{
+    margin-right: 0;
+    margin-left: -50px;
+    margin-bottom: 0;
+}
+nav ul .row .col-lg-2{
+    padding-left: 0;
+}
+nav ul li{
+    padding: 10px 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: cursive;
+    color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+@media(max-width:1199px){
+    nav ul li a{ font-size: 24px;}
+}
+@media(max-width:600px){
+    nav ul li a{ font-size: 22px;}
+}
+nav ul li:hover{
+    background: gray;
+}
+@media(max-width:991px){
+    nav ul li:hover{
+        background: none;
+    }
+}
+nav ul li:hover a{
+    text-decoration: none;
+    color: #fff;
+}
+@media(max-width:991px){
+    nav ul li:hover a{
+        text-decoration: underline;
+        color: #CAC9CB;
+    }
+}
+.header{
+    background: #cac9cb;
+    padding: 20px 0;
+}
+.header h2{
+    color: #333;
+    font-family: verdana;
+}
+@media(max-width:600px){
+    .header h2{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+.girls-color{ color: #f859ae;}
+.boys-color{ color: #2782f5;}
+.girls-bg{ background: #fac8e4;}
+.boys-bg{ background: #abccf5;}
+/*end header*/
+
+/*--start dresses--*/
+.dresses{
+    padding: 30px;
+    border-top: 5px solid #fff;
+}
+.dresses h2{
+    font-size: 50px;
+    font-family: verdana;
+    margin-bottom: 20px;
+}
+@media(max-width:767px){
+    .dresses h2{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+.dresses .dress{
+    border: 7px dotted #fff;
+    padding: 10px 10px 0 10px;
+    border-radius: 20px;
+}
+@media(max-width:767px){
+    .dresses .dress{
+        margin: 10px auto;
+    }
+}
+.dresses .dress-details{
+    border: 7px dotted #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+@media(min-width:768px) and (max-width:991px){
+    .dresses .dress-details{
+        margin-right: 20px;
+    }
+}
+.dresses .dress-details h3{
+    font-size: 30px;
+    font-family: verdana;
+    color: gray;
+}
+@media(max-width:600px){
+    .dresses .dress-details h3{
+        font-size: 26px;
+    }
+}
+.dresses .dress-details hr{
+    height: 5px;
+    background: #fff;
+}
+.dresses .dress-details p, .dresses .dress-details h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 22px;
+}
+@media(max-width:991px){
+    .dresses .dress-details p, .dresses .dress-details h4{
+        padding-bottom: 14px;
+    }
+}
+@media(max-width:600px){
+    .dresses .dress-details p, .dresses .dress-details h4{
+        font-size: 16px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+}
+.dresses .dress-details button{
+    border: 6px solid #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+@media(max-width:600px){
+    .dresses .dress-details button{
+        margin: 0 auto;
+        display: block;
+    }
+}
+.dresses .dress-details button:hover{ color: #333;}
+.dresses i{ color: #fff}
+.girls-clothes h2,.girls-clothes p,.girls-clothes h4,.girls-clothes button i,.girls-clothes button{
+    color: #f859ae;
+}
+.boys-clothes h2,.boys-clothes p,.boys-clothes h4,.boys-clothes button i,.boys-clothes button{
+    color: #2782f5;
+} 
+.carousel-control.right, .carousel-control.left{
+    background-image: none;
+}
+.dresses .controls{ margin-top: 30px;}
+.dresses .controls a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+@media(max-width:600px){
+    .dresses .controls a{ font-size: 17px;}
+}
+.dresses .controls .left{
+    margin-right: 5px;
+}
+.dresses .controls a:focus{
+    outline: none; 
+}
+.dresses .controls a:focus .glyphicon{ color: #333;}
+/*end dresses section*/
+
+/*start shoes section*/
+.shoes{
+    background: url(../images/shoes-bg.jpg) center center;
+}
+.shoes .fluid{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgba(51,51,51,.8);
+}
+.shoes h2{
+    font-family: verdana;
+    font-size: 50px;
+}
+.shoes p{
+    font-family: verdana;
+    color: #fff;
+    margin-bottom: 65px;
+    padding-bottom: 10px;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -70px;
+    margin-top: 75px;
+}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: -40px;
+    margin-top: 75px;
+}
+@media(max-width:767px){
+    .shoes .fluid{
+        padding-bottom: 80px;
+    }
+    .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+        margin-left: 50px;
+        margin-top: 590px;
+}
+    .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+        margin-right: 50px;
+        margin-top: 590px;
+}
+}
+.shoes .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next{
+    font-size: 60px;
+}
+.carousel-pink {
+    color: #fac8e4;
+}
+.carousel-blue {
+    color: #abccf5;
+}
+.shoes .item h4{
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #fff;
+    width: 139px;
+    padding: 10px;
+}
+.shoes .item button{
+    border: 6px solid #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.girl-shoes h4, .girl-shoes .item button, .girl-shoes .item button i,
+.girls-accessory h4, .girls-accessory .item button, .girls-accessory .item button i,
+.girls-toys .toy button i{
+    color: #f859ae;
+}
+.boy-shoes h4, .boy-shoes .item button, .girl-shoes .item i,
+.boys-accessory h4, .boys-accessory .item button, .boys-accessory .item i,
+.boys-toys .toy button i{
+    color: #2782f5; 
+}
+/*end shoes section*/
+
+
+/*start accessories section*/
+.accessory{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.accessory h2{
+    font-family: verdana;
+    font-size: 50px;
+}
+@media(max-width:600px){
+    .accessory h2{
+        font-size: 38px;
+    }
+}
+.accessory i{
+    font-size: 25px;
+    color: #626060;
+}
+@media(max-width:600px){
+    .accessory i{
+        font-size: 18px;
+    }
+}
+.accessory p{
+    font-family: verdana;
+    color: #8a8585;
+    margin-bottom: 65px;
+    border-bottom: 5px dotted #626060;
+    padding-bottom: 10px;
+}
+.accessory img{
+    border-radius: 10px;
+}
+.accessory .item h4{
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #fff;
+    width: 139px;
+    padding: 10px;
+}
+@media(max-width:600px){
+    .accessory .item h4{
+        font-size: 18px;
+        width: 111px;
+    }
+}
+.accessory .item button{
+    border: 6px solid #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+@media(max-width:600px){
+    .accessory .item button{
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+.accessory a, .toys a{
+    float: left;
+    color: #626060;
+    font-size: 23px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+/*end accessories section*/
+
+/*start toys section*/
+.toys{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background: url(../images/toys-bg.jpg) center center;
+}
+.toys h2{
+    text-align: center;
+    font-size: 60px;
+    font-family: verdana;
+    background: rgba(51,51,51,.5);
+    padding: 15px;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+@media(max-width:600px){
+    .toys h2{
+        font-size: 45px;
+    }
+}
+.toys .toy:hover .toy-details h3{
+    background: rgba(255,255,255,.3);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.toys img{
+    border: 15px solid;
+    border-color: rgba(51,51,51,.5);
+    border-radius: 20px;
+}
+.toys .toy-details h3{
+    border: 10px solid #6b6767;
+    color: #333;
+    background: #f6f0f0;
+    border-radius: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+@media(max-width:600px){
+    .toys .toy-details h3{
+        font-size: 20px;
+    }
+}
+.toys .toy-details button{
+    padding: 5px;
+    color: #fff;
+    background: #6b6767;
+    border-color: #6b6767;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+@media(max-width:600px){
+    .toys .toy-details button{
+        width: 115px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+.toys a{
+    color: #333;
+}
+/*end toys section*/
+
+/*start footer*/
+footer{
+    padding-top: 30px;
+}
+@media(max-width:600px){
+    footer{
+    padding-top: 0;
+    }
+}
+footer h2{
+    font-size: 47px;
+    font-family: verdana;
+    text-align: center;
+    color: #6B6767;
+    border-radius: 70px;
+    padding: 10px;
+    margin-top: 40px;
+}
+@media(max-width:1199px){
+    footer h2{ font-size: 28px;}
+}
+footer h3{
+    text-align: center;
+    border-radius: 70px;
+    padding: 10px;
+    border-top: 8px dotted #6B6767;
+    border-left: 8px dotted #6B6767;
+}
+@media(min-width:601px) and (max-width:1199px){
+    footer h3{ font-size: 15px;}
+}
+
+footer ul{
+    list-style: none;
+    margin-top: 40px;
+    border-radius: 70px;
+    width: 250px;
+    border-bottom: 8px dotted #6B6767;
+    border-left: 8px dotted #6B6767;
+}
+footer ul li{
+    padding: 5px;
+    font-size: 18px;
+}
+.girls-footer ul li a{ color: #F859AE;}
+.boys-footer ul li a{color: #2782f5;}
+footer ul li:hover a{ color: #6B6767;}
+footer h4{
+    padding-top: 9px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align:center;
+}
+@media(max-width:600px){
+    footer h4{ }
+}
+.girls-footer{
+    border-top: 8px dotted #F859AE;
+}
+.girls-footer h2{
+    border-right: 8px dotted #F859AE;
+    border-bottom: 8px dotted #F859AE;
+}
+.girls-footer h4{
+    border-right: 8px dotted #F859AE;
+    border-top: 8px dotted #F859AE;
+}
+.boys-footer{
+        border-top: 8px dotted #2782f5;
+}
+.boys-footer h2{
+    border-right: 8px dotted #2782f5;
+    border-bottom: 8px dotted #2782f5;
+}
+.boys-footer h4{
+    border-right: 8px dotted #2782f5;
+    border-top: 8px dotted #2782f5;
+}
+/*end footer*/
